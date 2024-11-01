@@ -1,0 +1,115 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - good morning
+    - hey there
+    - greetings
+    - good evening
+    - hello everyone
+    - hey
+    - Hi, how can I get help?
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - bye
+    - see you
+    - take care
+    - catch you later
+    - farewell
+    - have a good day
+    - till next time
+
+- intent: affirm
+  examples: |
+    - yes
+    - correct
+    - sure
+    - absolutely
+    - that’s right
+    - yep
+    - fine by me
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - not really
+    - don’t think so
+    - incorrect
+    - that’s wrong
+    - no way
+
+- intent: mood_great
+  examples: |
+    - I feel great
+    - awesome
+    - fantastic
+    - I am in a good mood
+    - today’s a good day
+    - everything is wonderful
+
+- intent: mood_unhappy
+  examples: |
+    - feeling down
+    - not my best day
+    - frustrated
+    - things aren’t going well
+    - I’m stressed
+    - annoyed
+    - not happy
+
+- intent: bot_challenge
+  examples: |
+    - are you a robot?
+    - is this automated?
+    - am I speaking to AI?
+    - is this a human or a bot?
+    - are you a chatbot?
+
+- intent: report_issue
+  examples: |
+    - My computer isn’t working
+    - I’m having trouble with [printer](device)
+    - [Network](issue_type) connectivity issues
+    - I need technical support for my system
+    - My [email](system) is not accessible
+    - There’s an issue with my laptop
+    - Something’s wrong with my device
+
+- intent: password_reset
+  examples: |
+    - Can you help me reset my password?
+    - I forgot my password
+    - How to change my password?
+    - I need assistance with password reset
+    - Can’t log in due to password issues
+
+- intent: software_installation
+  examples: |
+    - How do I install [Zoom](software)?
+    - I need help with [Microsoft Office](software) installation
+    - Install [Teams](software) for me
+    - Having trouble with software setup
+    - Could you guide me on installing software?
+
+- intent: network_connectivity
+  examples: |
+    - Internet connection is down
+    - Can’t connect to Wi-Fi
+    - Network is very slow
+    - Facing VPN connectivity issues
+    - How do I resolve network issues?
+
+- intent: thank
+  examples: |
+    - thank you
+    - thanks a lot
+    - appreciate it
+    - that’s helpful
+    - much obliged
+    - thanks
+    - grateful for your help

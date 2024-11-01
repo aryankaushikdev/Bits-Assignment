@@ -1,0 +1,37 @@
+version: "3.1"
+rules:
+- rule: Respond to greeting
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Respond to goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: Acknowledge gratitude
+  steps:
+    - intent: thank
+    - action: utter_you_are_welcome
+
+- rule: Bot identity response
+  steps:
+    - intent: bot_challenge
+    - action: utter_bot_identity
+
+# Commented sections can be expanded for future updates
+# - rule: Start user authentication flow
+#   steps:
+#     - intent: greet
+#     - action: user_auth_form
+#     - active_loop: user_auth_form
+
+# - rule: Handle unsuccessful user verification
+#   condition:
+#   - slot_was_set:
+#       - verified: false
+#   steps:
+#     - action: utter_auth_failed
+#     - action: user_auth_form
+#     - active_loop: user_auth_form

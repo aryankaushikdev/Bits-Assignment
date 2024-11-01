@@ -1,0 +1,57 @@
+version: "3.1"
+stories:
+- story: Greeting flow
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: Positive mood flow
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_mood_positive
+
+- story: Unhappy mood flow
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_comfort
+    - action: utter_offer_help
+
+- story: Password reset assistance
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: password_reset
+    - action: utter_password_reset_instructions
+    - intent: thank
+    - action: utter_you_are_welcome
+
+- story: Software installation guidance
+  steps:
+    - intent: software_installation
+    - action: utter_software_installation_steps
+    - action: utter_anything_else
+    - intent: thank
+    - action: utter_you_are_welcome
+
+- story: Network troubleshooting
+  steps:
+    - intent: network_connectivity
+    - action: utter_network_diagnosis
+    - action: utter_anything_else
+    - intent: thank
+    - action: utter_you_are_welcome
+
+- story: Issue report with specific device
+  steps:
+    - intent: report_issue
+      entities:
+        - device: "printer"
+    - action: action_diagnose_device
+    - action: utter_anything_else
+    - intent: affirm
+    - action: utter_assistance_provided
+
